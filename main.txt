@@ -1,0 +1,44 @@
+DATA STRUCTURE
+    * It was used to STORE and ORGANIZE data in a structure.
+
+ALGORITHM
+    * It is a Step by Step procedure to solve a problem.
+
+TYPES OF DATA STRUCTURE
+    1. PRIMITIVE DATA STRUCTURE
+    2. NON - PRIMITIVE DATA STRUCTURE
+
+1. PRIMITIVE DATA STRUCTURE
+    * It was a basic and fundamental Data structures
+        
+        => INT
+        => FLOAT
+        => CHAR
+        => BOOLEAN
+
+2. NON - PRIMITIVE DATA STRUCTURE
+    * It was a complex data structure
+    * It was used to store collection of data
+
+        => LINEAR DATA STRUCTURE
+        => NON - LINEAR DATA STRUCTURE
+
+2.1 LINEAR DATA STRUCTURE
+    * It was used to store data linearly
+    * Each elements connect with only one element
+    * It have START and END point
+
+        => ARRAYS
+        => LINKED LIST
+        => STACK    (FILO)
+        => QUEUE    (FIFO)
+
+2.2 NON - LINEAR DATA STRUCTURE (HIERARCHICAL Data structure)
+    * It was not arranged in a sequential order
+    * Each element connects with multiple element
+    * It was in HIERARCHICAL order.
+
+        => TREES
+        => GRAPHs
+        => HEEP
+        => HASH TABLE

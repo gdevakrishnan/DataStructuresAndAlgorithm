@@ -1,0 +1,74 @@
+TREES
+    * It consists of Vertices (in Plural 'Vertex') connected with edges.
+
+    * Trees are a Non - Linear / Hierarchical data structure
+    * It has a Root node, Branch nodes and Leaf nodes
+    * It has only one root node
+
+1. Vertex (node)
+    * It was block of a data.
+
+2. Vertices
+    * It was a collection of Vertex
+
+3. Root
+    * The top most Vertex (node) of a tree.
+    * It has no parent.
+
+4. Child
+    * One who vertex (node) have a parent vertex.
+
+5. parent
+    * One who vertex (node) have more than 1 child.
+
+6. Leaf
+    * One who vertex (node) does not have even one child
+
+7. Siblings
+    * Nodes with the same parent
+
+8. Subtree
+    * Subtree is a tree formed by a node.
+
+PROPERTIES
+1. HEIGHT
+    => Longest chain of vertices (nodes)
+
+2. DEPTH
+    => Longest chain of edges
+
+TYPES
+    * Binary Tree
+    * Binary Search Tree
+    * AVL Tree
+    * Red - Black Tree
+    * B - Tree
+
+NOTE
+BINARY TREE vs BINARY SEARCH TREE
+    * BINARY TREE consist of atmost two child called as left child and right child.
+    * BINARY SEARCH TREE const of two childs like Binary Tree but, The RIGHT CHILD IS GREATER THAN LEFT CHILD.
+
+
+
+ORDER IN BINARY SEARCH TREE
+
+                    6
+                4       8
+            2     15  7     9
+
+1. PRE ORDER
+    Root Left Right
+
+    => 6, 4, 2, 15, 8, 7, 9
+
+
+2. POST ORDER
+    Left Right Root
+
+    => 2, 15, 4, 7, 9, 8, 6
+
+3. INORDER
+    Left Root Right
+
+    => 2, 4, 15, 6, 7, 8, 9
