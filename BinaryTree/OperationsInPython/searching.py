@@ -1,30 +1,49 @@
-""" 
-    Problem Statement: Find an element in an array (list) using Binary Search Tree in python
-"""
+class Node:
+	def __init__(self, key):
+		self.key = key
+		self.left = None
+		self.right = None
 
-import math
+def insert(node, key):
+	if node is None:
+		return Node(key)
 
-def searching(arr, n, k):
-    left = 0
-    right = n - 1
-    step = 1;
+	if key < node.key:
+		node.left = insert(node.left, key)
+	elif key > node.key:
+		node.right = insert(node.right, key)
 
-    while (left <= right):
-        mid = math.floor((left + right) / 2)
+	return node
 
-        if (arr[mid] == k):
-            print("No. Of Steps: ", step)
-            print("index: ", mid)
-            return
+def search(root, key):
+	if root is None or root.key == key:
+		return root
 
-        elif (arr[mid] < k):
-            step += 1
-            left = mid + 1
+	if root.key < key:
+		return search(root.right, key)
 
-        else:
-            step += 1
-            right = mid - 1
+	return search(root.left, key)
 
-    print(k, "Not Found in the given Array")
+if __name__ == '__main__':
+	root = None
+	root = insert(root, 50)
+	insert(root, 30)
+	insert(root, 20)
+	insert(root, 40)
+	insert(root, 70)
+	insert(root, 60)
+	insert(root, 80)
 
-searching([1, 2, 3, 4, 5], 5, 5)
+	key = 6
+
+	if search(root, key) is None:
+		print(key, "not found")
+	else:
+		print(key, "found")
+
+	key = 60
+
+	if search(root, key) is None:
+		print(key, "not found")
+	else:
+		print(key, "found")
